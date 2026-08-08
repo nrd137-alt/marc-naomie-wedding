@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marc &amp; Naomie — 4 July 2027</title>
+<meta name="description" content="Join Marc &amp; Naomie for their wedding at The Lodge at Cathedral Pines, Black Forest, Colorado — July 4th, 2027.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Marc &amp; Naomie — 4 July 2027">
+<meta property="og:description" content="The road goes ever on — join us at The Lodge at Cathedral Pines.">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Hidden defs: reusable corner-vine symbol -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="corner-vine" viewBox="0 0 46 46">
+      <path d="M3,45 C3,24 5,10 18,5 C26,2 34,2 43,3"/>
+      <path d="M43,3 C38,3 34,6 35,10 C36,13 41,12 42,8"/>
+      <path d="M3,45 C6,40 10,38 9,33 C8,29 4,29 3,33"/>
+    </symbol>
+    <symbol id="vine-divider" viewBox="0 0 480 40">
+      <path d="M0,20 C60,20 60,6 120,6 C170,6 170,20 240,20 C310,20 310,6 360,6 C420,6 420,20 480,20"/>
+      <circle cx="240" cy="20" r="3" fill="var(--gold)" stroke="none"/>
+      <path d="M225,20 Q232,10 240,7" fill="none"/>
+      <path d="M255,20 Q248,10 240,7" fill="none"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div id="starfield" aria-hidden="true"></div>
+
+<nav class="site-nav" id="siteNav">
+  <span class="nav-mark">M <span>&amp;</span> N</span>
+  <div class="nav-links" id="navLinks">
+    <a class="nav-link" href="#story">Story</a>
+    <a class="nav-link" href="#schedule">Schedule</a>
+    <a class="nav-link" href="#travel">Travel</a>
+    <a class="nav-link" href="#fund">Registry</a>
+    <a class="nav-link" href="#faq">FAQ</a>
+    <a class="nav-rsvp" href="#rsvp">RSVP</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+  </button>
+</nav>
+
+<a class="floating-rsvp" id="floatingRsvp" href="#rsvp">RSVP</a>
+
+<button class="audio-toggle" id="audioToggle" aria-label="Toggle ambient music" aria-pressed="false">
+  <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M11 5 6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+  <svg class="icon-playing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a9 9 0 0 1 0 12"/></svg>
+</button>
+<audio id="ambientAudio" loop preload="none">
+  <source src="assets/audio/ambient.mp3" type="audio/mpeg">
+</audio>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-inner">
+      <svg class="hero-wreath" viewBox="0 0 300 300" aria-hidden="true">
+        <path d="M32,150 A118,118 0 1,1 268,150 A118,118 0 1,1 31.8,150" fill="none" stroke="var(--gold)" stroke-width="1"/>
+        <g fill="none" stroke="var(--gold)" stroke-width="1">
+          <path d="M150.0,32.0 Q152.0,25.0 154.0,22.0"/>
+          <path d="M195.2,41.0 Q199.7,35.3 202.7,33.3"/>
+          <path d="M233.4,66.6 Q239.8,63.0 243.3,62.3"/>
+          <path d="M259.0,104.8 Q266.3,104.0 269.8,104.7"/>
+          <path d="M268.0,150.0 Q275.0,152.0 278.0,154.0"/>
+          <path d="M259.0,195.2 Q264.7,199.7 266.7,202.7"/>
+          <path d="M233.4,233.4 Q237.0,239.8 237.7,243.3"/>
+          <path d="M195.2,259.0 Q196.0,266.3 195.3,269.8"/>
+          <path d="M150.0,268.0 Q148.0,275.0 146.0,278.0"/>
+          <path d="M104.8,259.0 Q100.3,264.7 97.3,266.7"/>
+          <path d="M66.6,233.4 Q60.2,237.0 56.7,237.7"/>
+          <path d="M41.0,195.2 Q33.7,196.0 30.2,195.3"/>
+          <path d="M32.0,150.0 Q25.0,148.0 22.0,146.0"/>
+          <path d="M41.0,104.8 Q35.3,100.3 33.3,97.3"/>
+          <path d="M66.6,66.6 Q63.0,60.2 62.3,56.7"/>
+          <path d="M104.8,41.0 Q104.0,33.7 104.7,30.2"/>
+        </g>
+        <g fill="var(--gold-bright)" stroke="none">
+          <circle cx="150" cy="10" r="2.2"/>
+          <circle cx="290" cy="150" r="2.2"/>
+          <circle cx="150" cy="290" r="2.2"/>
+          <circle cx="10" cy="150" r="2.2"/>
+        </g>
+      </svg>
+
+      <p class="hero-request">Together with their kindred and friends</p>
+      <h1 class="hero-names">Marc <span class="hero-amp">&amp;</span> Naomie</h1>
+
+      <p class="hero-meta">Friday <span class="sep">&middot;</span> July 4, 2027 <span class="sep">&middot;</span> 3:00 PM</p>
+      <p class="hero-place">The Lodge at Cathedral Pines &middot; Black Forest, Colorado Springs</p>
+
+      <!-- Countdown -->
+      <div class="countdown" id="countdown" aria-label="Countdown to the wedding">
+        <div class="countdown-unit"><span class="countdown-num" id="cd-days">00</span><span class="countdown-label">Days</span></div>
+        <div class="countdown-unit"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-label">Hours</span></div>
+        <div class="countdown-unit"><span class="countdown-num" id="cd-mins">00</span><span class="countdown-label">Mins</span></div>
+        <div class="countdown-unit"><span class="countdown-num" id="cd-secs">00</span><span class="countdown-label">Secs</span></div>
+      </div>
+
+      <p class="hero-quote">
+        &ldquo;There's some good in this world, and it's worth fighting for.&rdquo;
+        <cite>Samwise Gamgee</cite>
+      </p>
+
+      <div class="scroll-cue">
+        <svg viewBox="0 0 14 20" fill="none" stroke="currentColor" stroke-width="1.2"><line x1="7" y1="0" x2="7" y2="18"/><path d="M2,13 L7,19 L12,13"/></svg>
+        Begin the journey
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= OUR STORY ================= -->
+  <section class="section" id="story">
+    <div class="section-inner">
+      <p class="eyebrow">Our Story</p>
+      <h2>Two Roads, One Fellowship</h2>
+      <div class="story-body reveal">
+        <p>
+          Every good tale begins with an unexpected meeting. Ours started much the same way — two
+          paths that had no reason to cross, until they did.
+        </p>
+        <p>
+          What followed was ordinary in the way all the best adventures are: quiet evenings,
+          long conversations, and the slow realization that we'd rather face whatever comes next
+          side by side. Now, surrounded by the people we love most, we're ready to set out on the
+          next leg of the journey — together, always.
+        </p>
+      </div>
+      <p class="edit-note">— Replace this paragraph with your own story before publishing —</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 480 40"><use href="#vine-divider"/></svg></div>
+
+  <!-- ================= SCHEDULE ================= -->
+  <section class="section" id="schedule">
+    <div class="section-inner">
+      <p class="eyebrow">The Road Goes Ever On</p>
+      <h2>Schedule of the Day</h2>
+
+      <div class="timeline">
+        <div class="stop reveal">
+          <p class="stop-time">3:00 PM &middot; Arrival</p>
+          <h3 class="stop-title">Gathering of the Guests</h3>
+          <p class="stop-note">Please arrive by 3:00 PM so we may begin promptly — the path to the ceremony site takes a few minutes on foot from parking.</p>
+        </div>
+        <div class="stop reveal">
+          <p class="stop-time">3:30 PM</p>
+          <h3 class="stop-title">Ceremony</h3>
+          <p class="stop-note">Among the pines at The Lodge at Cathedral Pines.</p>
+        </div>
+        <div class="stop reveal">
+          <p class="stop-time">5:00 PM</p>
+          <h3 class="stop-title">Cocktail Hour</h3>
+          <p class="stop-note">Drinks, light bites, and a moment to breathe in the mountain air.</p>
+        </div>
+        <div class="stop reveal">
+          <p class="stop-time">6:30 &ndash; 10:00 PM</p>
+          <h3 class="stop-title">Reception</h3>
+          <p class="stop-note">Dinner, toasts, dancing, and merrymaking late into the evening.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 480 40"><use href="#vine-divider"/></svg></div>
+
+  <!-- ================= TRAVEL & ACCOMMODATIONS ================= -->
+  <section class="section" id="travel">
+    <div class="section-inner">
+      <p class="eyebrow">For Those Who Travel Far</p>
+      <h2>Travel &amp; Accommodations</h2>
+
+      <div class="info-block reveal">
+        <h3>Getting Here</h3>
+        <p>
+          The nearest airport is <strong>Colorado Springs Airport (COS)</strong>, roughly a
+          25&ndash;35 minute drive to the Black Forest area depending on traffic. Denver
+          International Airport (DEN) is a further option, about 1.5&ndash;2 hours north. A rental
+          car is recommended, as the venue sits in a rural, wooded part of El Paso County.
+        </p>
+      </div>
+
+      <div class="info-block reveal">
+        <h3>Where to Stay</h3>
+        <p>No official room block yet — here are well-rated options near the venue, roughly ordered by distance:</p>
+      </div>
+
+      <div class="hotel-grid reveal">
+        <div class="hotel-card">
+          <h4>Black Forest Lodge (B&amp;B)</h4>
+          <p class="price">~$115&ndash;$160 / night</p>
+          <p>Rustic log lodge right in Black Forest — closest option to the venue, cozy country feel.</p>
+        </div>
+        <div class="hotel-card">
+          <h4>Hampton Inn Colorado Springs Northeast</h4>
+          <p class="price">~$100&ndash;$135 / night</p>
+          <p>Reliable, well-reviewed, free breakfast — about a 20 minute drive to the venue.</p>
+        </div>
+        <div class="hotel-card">
+          <h4>Drury Inn &amp; Suites (near AFB)</h4>
+          <p class="price">~$90&ndash;$105 / night</p>
+          <p>Highly rated, good value, roughly 25 minutes from Black Forest.</p>
+        </div>
+        <div class="hotel-card">
+          <h4>Staybridge Suites NE Powers</h4>
+          <p class="price">~$120&ndash;$150 / night</p>
+          <p>Extended-stay suites, good for guests staying multiple nights.</p>
+        </div>
+      </div>
+      <p class="price-disclaimer">Prices are estimates based on typical rates and will vary by season and how early you book. We recommend booking a few months out.</p>
+
+      <div class="callout reveal" style="margin-top: 2.2rem;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="9" width="18" height="9" rx="1.5"/><path d="M5 9 6.5 4h11L19 9"/><circle cx="7.5" cy="18.5" r="1.5"/><circle cx="16.5" cy="18.5" r="1.5"/></svg>
+        <div>
+          <h4>Parking &amp; Shuttle</h4>
+          <p>Parking is available on-site at the venue. If you'd like a shuttle from your hotel, let us know on the RSVP form and we'll follow up with details closer to the date. <em>(Edit this once shuttle plans are confirmed.)</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 480 40"><use href="#vine-divider"/></svg></div>
+
+  <!-- ================= HONEYMOON FUND ================= -->
+  <section class="section" id="fund">
+    <div class="section-inner fund">
+      <p class="eyebrow">One Last Adventure</p>
+      <h2>Our Journey to New Zealand</h2>
+      <div class="fund-copy reveal">
+        <p>
+          Instead of a traditional registry, we're setting out for New Zealand — Hobbiton
+          included — for our honeymoon. If you'd like to help send us on our way, a
+          contribution toward the journey means more to us than any gift.
+        </p>
+      </div>
+      <div class="qr-box reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><line x1="14" y1="14" x2="14" y2="21"/><line x1="21" y1="14" x2="21" y2="21"/><line x1="17" y1="17" x2="21" y2="17"/></svg>
+        <span>QR code coming soon</span>
+      </div>
+      <p class="fund-note">— Swap in your real QR code / link at assets/img/honeymoon-qr.svg or .png before publishing —</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 480 40"><use href="#vine-divider"/></svg></div>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="section-inner">
+      <p class="eyebrow">Questions of the Fellowship</p>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What should I wear?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Semi-formal / cocktail attire. The ceremony and reception are outdoors, so we recommend comfortable shoes for grass and gravel paths, and a layer for the evening once the sun goes down.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are kids welcome?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Yes — let us know how many and their ages on the RSVP form so we can plan accordingly.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I bring a plus-one?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>If your invitation includes a +1, there's a field for their name on the RSVP form. If you're not sure, just ask us directly.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is there parking at the venue?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Yes, on-site parking is available. See the Travel &amp; Accommodations section above for shuttle options if you'd rather not drive.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What if the weather turns?
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer"><p>Early July in Colorado is generally warm and sunny with a chance of afternoon showers — the venue has a covered backup plan in case of rain.</p></div>
+        </div>
+      </div>
+      <p class="edit-note">— Edit or add to these FAQs as needed before publishing —</p>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 480 40"><use href="#vine-divider"/></svg></div>
+
+  <!-- ================= RSVP ================= -->
+  <section class="section" id="rsvp">
+    <div class="section-inner">
+      <p class="eyebrow">Send Word of Your Coming</p>
+      <h2>RSVP</h2>
+      <p class="rsvp-deadline">Kindly reply by <strong>April 4th, 2027</strong></p>
+
+      <div class="framed reveal">
+        <svg class="corner tl"><use href="#corner-vine"/></svg>
+        <svg class="corner tr"><use href="#corner-vine"/></svg>
+        <svg class="corner bl"><use href="#corner-vine"/></svg>
+        <svg class="corner br"><use href="#corner-vine"/></svg>
+
+        <div class="form-wrap">
+          <!--
+            Replace this placeholder with your Google Form embed once it's built.
+            In Google Forms: Send > Embed (<>) > copy the <iframe> src URL and paste below,
+            or paste the whole <iframe> tag in place of the div.form-placeholder block.
+
+            Example:
+            <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true"
+                    width="100%" height="900">Loading…</iframe>
+          -->
+          <div class="form-placeholder">
+            RSVP form goes here.
+            <code>&lt;iframe src="YOUR_GOOGLE_FORM_EMBED_URL" width="100%" height="900"&gt;&lt;/iframe&gt;</code>
+            See google-form-fields.md for the full field list to build in Google Forms.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="divider" aria-hidden="true"><svg viewBox="0 0 480 40"><use href="#vine-divider"/></svg></div>
+  <p class="footer-quote">"All we have to decide is what to do with the time that is given us."</p>
+  <p class="footer-names">See you there — Marc &amp; Naomie</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
