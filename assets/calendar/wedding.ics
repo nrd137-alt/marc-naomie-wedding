@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Marc & Naomie//Wedding//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:marc-naomie-wedding-20270704@marc-naomie-wedding
+DTSTAMP:20260808T000000Z
+DTSTART:20270704T210000Z
+DTEND:20270705T040000Z
+SUMMARY:Marc & Naomie's Wedding
+DESCRIPTION:Ceremony begins at 3:30 PM. Please arrive by 3:00 PM. Reception follows through 10:00 PM.
+LOCATION:The Lodge at Cathedral Pines\, 13977 Milam Rd\, Colorado Springs\, CO 80908
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
