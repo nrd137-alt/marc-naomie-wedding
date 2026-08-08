@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------------- Starfield ---------------- */
   const field = document.getElementById('starfield');
   if (field) {
-    const COUNT = 90;
+    const COUNT = 26;
     const frag = document.createDocumentFragment();
     for (let i = 0; i < COUNT; i++) {
       const star = document.createElement('div');
       star.className = 'star' + (Math.random() < 0.15 ? ' big' : '') + (Math.random() < 0.4 ? ' dim' : '');
       star.style.left = Math.random() * 100 + '%';
       star.style.top = Math.random() * 100 + '%';
-      star.style.animationDelay = (Math.random() * 5).toFixed(2) + 's';
-      star.style.animationDuration = (3 + Math.random() * 4).toFixed(2) + 's';
+      star.style.animationDelay = (Math.random() * 8).toFixed(2) + 's';
+      star.style.animationDuration = (10 + Math.random() * 8).toFixed(2) + 's';
       frag.appendChild(star);
     }
     field.appendChild(frag);
