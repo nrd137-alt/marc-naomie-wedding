@@ -28,7 +28,7 @@
   /* --- Type --- */
   --display: 'Cinzel', serif;
   --body: 'Cormorant Garamond', serif;
-
+ 
   /* --- Rhythm --- */
   --section-pad: clamp(4rem, 9vw, 7.5rem);
   --content-w: min(920px, 92vw);
