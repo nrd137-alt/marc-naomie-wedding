@@ -213,7 +213,7 @@ main { position: relative; z-index: 1; }
   justify-content: center;
   scroll-margin-top: 5rem;
 }
-.section:nth-of-type(even) { background: var(--parchment-deep); }
+
 
 .section-inner { width: var(--content-w); position: relative; }
 
