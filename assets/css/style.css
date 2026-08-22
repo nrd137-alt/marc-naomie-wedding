@@ -334,7 +334,7 @@ main { position: relative; z-index: 1; }
 .hero-names {
   font-family: var(--display);
   font-weight: 600;
-  font-size: clamp(2.6rem, 8vw, 4.6rem);
+  font-size: clamp(1.7rem, 9vw, 4.6rem);
   line-height: 1.05;
   color: var(--ink-green);
   letter-spacing: 0.03em;
