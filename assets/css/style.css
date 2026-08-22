@@ -669,3 +669,4 @@ footer { text-align: center; padding: 5rem 1.5rem 4rem; position: relative; z-in
   .stop::before { left: -2.1rem; }
   .hero-arch { top: 2rem; }
 }
+.divider { display: none; }
