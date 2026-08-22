@@ -252,9 +252,23 @@ main { position: relative; z-index: 1; }
 /* --------------------------------------------------------------------
    Vine divider — draws itself in on scroll
    -------------------------------------------------------------------- */
+
 .divider {
   display: flex; justify-content: center;
-  margin: 0 auto; width: 100%; max-width: 480px; opacity: 0.95;
+  margin: 0 auto; width: 100%; max-width: none; opacity: 0.95;
+  padding: 2rem 0;
+}
+.divider svg { max-width: 480px; }
+
+main > div.divider:nth-of-type(odd) {
+  background: linear-gradient(to bottom,
+    var(--parchment) 0%, var(--parchment) 50%,
+    var(--parchment-deep) 50%, var(--parchment-deep) 100%);
+}
+main > div.divider:nth-of-type(even) {
+  background: linear-gradient(to bottom,
+    var(--parchment-deep) 0%, var(--parchment-deep) 50%,
+    var(--parchment) 50%, var(--parchment) 100%);
 }
 .divider svg { width: 100%; height: auto; overflow: visible; }
 .divider path {
