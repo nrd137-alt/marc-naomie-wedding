@@ -93,3 +93,5 @@ built-in verified email capture in addition to the manual email field below.
    ```
 4. Delete the placeholder `<div class="form-placeholder">…</div>` entirely once the
    iframe is in place.
+
+   :-)
