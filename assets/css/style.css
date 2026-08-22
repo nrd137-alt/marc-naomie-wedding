@@ -605,14 +605,26 @@ main { position: relative; z-index: 1; }
    -------------------------------------------------------------------- */
 .fund { text-align: center; }
 .fund-copy { max-width: 38em; margin: 0 auto 2.2rem; font-size: 1.12rem; }
-.qr-box {
-  width: 190px; height: 190px; margin: 0 auto;
-  border: 1px dashed var(--gold);
-  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.5rem;
-  background: var(--panel); padding: 1rem; text-align: center;
+
+.fund-payments {
+  display: flex; flex-direction: column; gap: 1.75rem;
+  max-width: 25em; margin: 0 auto;
 }
-.qr-box span { font-family: var(--display); font-size: 0.62rem; letter-spacing: 0.1em; color: var(--body-dim); text-transform: uppercase; }
-.qr-box svg { width: 48px; height: 48px; opacity: 0.55; stroke: var(--gold-deep); }
+.fund-payments-name {
+  font-family: var(--display); font-size: 1.2rem; color: var(--body-dim);
+  margin-bottom: 0.6rem; border-bottom: 1px solid var(--gold); padding-bottom: 0.4rem;
+}
+.fund-payments-btn {
+  display: inline-block; border: 1px solid var(--gold-deep); color: var(--gold-deep);
+  text-decoration: none; font-style: italic; padding: 0.5rem 1.1rem;
+  margin: 0 0.5rem 0.5rem 0; transition: background .15s, color .15s;
+}
+.fund-payments-btn:hover { background: var(--gold-deep); color: var(--panel); }
+.fund-payments-static {
+  display: inline-block; font-style: italic; color: var(--body-dim); padding: 0.5rem 0;
+}
+
+
 .fund-note { margin-top: 1.4rem; font-size: 0.85rem; font-style: italic; color: var(--body-dim); }
 
 /* --------------------------------------------------------------------
